@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+
+access_customer_customer,access_customer_customer,model_customer_customer,,1,1,1,1
+access_member_member,access_member_member,model_member_member,,1,1,1,1
+access_member_details,access_member_details,model_member_details,,1,1,1,1

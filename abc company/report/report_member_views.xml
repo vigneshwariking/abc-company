@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_member_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Member Report</h2>
+                    </div>
+                    <t t_if="o.member_ids">
+                        <span>Member Report</span>
+                        <html>
+                            <head>
+                                <style>
+                                    table, th, td {
+                                    border: 1px solid black;
+                                    border-collapse: collapse;
+                                    }
+                                    <head>
+                                      <title>HTML Elements Reference</title>
+                                    </head>
+                                </style>
+                            </head>
+                            <body>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td style="border-color: #FF0000" colspan="10">
+                                            <p style="text-align:center; padding-top:20px;">
+                                         <strong>
+                                             Medical AND general stare
+                                                CHEMIST AND DRUGGIST
+                                         </strong>
+                                            </p>
+                                        </td>
+                                        <tr>
+                                            <td style="border-color: #FF0000; text-align:left;" colspan="4">Name:
+                                            <td style="border-color: #FF0000; text-align:left;" colspan="3">Invoice No:
+                                            <p style="text-align:center; padding-bottom:15px;">
+
+                                        </p>
+                                            </td>
+                                        </td>
+                                        </tr>
+                                    </tr>
+                                    <th style="border-color: #FF0000;  text-align:center;">Qty</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Pack</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Mfg</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Particulars</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Batch</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Exp</th>
+                                    <th style="border-color: #FF0000; text-align:center;">Amount</th>
+                                    <tr style="height:300px">
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                        <td style="border-color: #FF0000; text-align:center;"> </td>
+                                    </tr>
+                                     <tr>
+                                         <th style="border-color: #FF0000; text-align:left;" colspan="6">Currency Hear</th>
+                                        <th style="border-color: #FF0000; text-align:left;" colspan="1"> </th>
+                                     </tr>
+                                    <td style="border-color: #FF0000; text-align:left;" colspan="4">All the best
+                                         <td style="border-color: #FF0000; text-align:left;" colspan="3">for
+                                        <p style="text-align:center; padding-bottom:20px;">
+                                        </p>
+                                         </td>
+                                    </td>
+                                </table>
+                            </body>
+                        </html>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
+
+
+
+
+
